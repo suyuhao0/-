@@ -1,14 +1,44 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/1/index",
+    "pages/logs/logs",
+    "pages/2/zbc",
+    "pages/3/lak",
+    "pages/4/syh",
+    "pages/5/lwj"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#000",
+    "color": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/1/index"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/2/zbc"
+      },
+      {
+        "text": "发现",
+        "pagePath": "pages/3/lak"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/4/syh"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/5/lwj"
+      }
+    ]
+  }
 }
