@@ -1,0 +1,10 @@
+<view>
+  <view class="data_top">
+    <view class="nav_box">
+      <view class="nav" wx:for="{{ nav }}" >
+
+      </view>
+    </view>
+  </view>
+  <view class="data_bot"></view>
+</view>
