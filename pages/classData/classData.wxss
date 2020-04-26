@@ -1,19 +1,20 @@
 .data_top{
   width: 100%;
   height: 44rpx;
-  display: flex; overflow-x: initial;
-  display: -webkit-box;
+  /* display: flex; overflow-x: initial; */
+  /* display: -webkit-box; */
 }
-.nav_box{
+/* .nav_box{
   width: 200%;height: 100%;
   background-color: purple;
   overflow: hidden;
         animation: moving 10s linear infinite;
-}
+} */
 .nav{
-  width: 100rpx;height: 100%;
+  width: 100rpx;height: 50rpx;
   background-color: red;
   margin-right: 10px;
+  display: inline-block
 }
 
 
