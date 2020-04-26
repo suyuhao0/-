@@ -1,2 +1,88 @@
 <!--pages/5/lwj.wxml-->
-<text>pages/5/lwj.wxml</text>
+<!-- 这是点击登录和签到 -->
+<view class="head">
+	<!-- 登录-->
+	<view class="head_red">
+		<image src="./imges/log.jpg" class="login"></image>
+		<text class="login_d">点击登录</text>
+	</view>
+	<!-- 签到  -->
+	<view class="head_qiandao">
+		<view class="head_top">
+			<view class="one">
+				<view class="play_center"> 玩币中心</view>
+				<view class="play_key"> 可用玩币</view>
+			</view>
+      	<text class="gang">|</text>
+			<view class="one">
+				<view class="play_center"> 签到+玩币</view>
+				<view class="zero"> 已连续签到0天</view>
+			</view>
+		
+			<text class="qiandao">签到</text>
+		</view>
+		<image src="./imges/chuan.jpg" class="img2"></image>
+	</view>
+     
+</view>
+<!-- 我的订单 -->
+<view class="center_one">
+       <view class="center_one1">
+       <text>我的订单</text>
+       <text class="all">查看全部</text>
+       </view>   
+        <view class="center_one2">
+			  	<view wx:for="{{ arr }}" class="v1">
+			       	 <image src="{{ item.img }}" class="img3"  ></image>
+				        <view class="v2">{{ item.title }}</view>
+				  </view>
+            
+       </view> 
+</view>
+<!-- 三单有礼 -->
+<view class="center_two">
+       <view class="center_one1">
+       <text>三单有礼</text>
+       <text class="all">查看全部</text>
+       </view>   
+			 <image src="./imges/chu.jpg" class="img5"></image>
+			 <view class=" v5">
+			 <image src="./imges/tu_28.jpg" class="img6"></image>
+			  <text class="three">每下3笔有效订单，确认收货后，可以获得优惠券</text>
+			 </view>
+</view>
+<!-- 我的服务 -->
+<view class="center_three">
+       <view class="center_one1">
+       <text>我的服务</text>
+       </view>  
+			   <view class="three_vie">
+			     	<view wx:for="{{ arr1 }}" class="three_nav">
+			       	 <image src="{{ item.img }}" class="three_pic"></image>
+				        <view  class="three_v">{{ item.title }}</view>
+				     </view>
+            
+       </view>  
+</view>
+<!-- 猜你喜欢 -->
+<view class="center_four">
+			 <view class="three_down">
+			        <view class="love">
+			      猜你喜欢
+		      	 </view>
+						 <view class="love_down">
+						  <view class="love_list"  wx:for="{{list}}" >
+						    <image src="{{item.img}}" class="love_pic" ></image>
+								<view class="love_name">{{item.name}}</view>
+								<view class="love_connect">{{item.connect}}</view>
+								<view class="love_new">新品</view>
+								<view>
+								    <text class="love_price">￥{{item.price}}</text>
+										<text class="love_oldprice">￥{{item.oldprice}}</text>
+								</view>
+						 </view>
+						 </view>
+						
+			 </view>
+      
+</view>
