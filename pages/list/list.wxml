@@ -1,0 +1,7 @@
+<view>
+<view>
+  详情页面
+</view>
+  
+  {{title}}
+</view>

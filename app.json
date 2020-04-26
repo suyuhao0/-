@@ -5,7 +5,8 @@
     "pages/2/zbc",
     "pages/3/lak",
     "pages/4/syh",
-    "pages/5/lwj"
+    "pages/5/lwj",
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
