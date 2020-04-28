@@ -6,7 +6,7 @@
     "pages/3/lak",
     "pages/4/syh",
     "pages/5/lwj",
-    "pages/classData/classData"
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
