@@ -26,12 +26,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+<<<<<<< HEAD
         wx.request({
           url: 'https://api.douban.com/v2/movie/top250?apikey=0b2bdeda43b5688921839c8ecb20399b',
           success(res){
             console.log(res)
           }
         })
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   },
 
   /**

@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     seteIndex:0,
     list:[
       {
@@ -127,24 +128,35 @@ Page({
     wx.navigateTo({
       url: '/pages/classData/classData?nav='+str,
     })
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+<<<<<<< HEAD
     console.log(this.data.list)
     this.setData({
       title: this.data.list[this.data.seteIndex].catename,
       items: this.data.list[this.data.seteIndex].cateitems
     })
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   },
 
   /**

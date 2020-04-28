@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* pages/5/lwj.wxss */
 .head{
   height: 490rpx;
@@ -238,3 +239,6 @@ position: absolute;
 top:60rpx;
 left: 150rpx;
 }
+=======
+/* pages/5/lwj.wxss */
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c

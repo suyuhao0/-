@@ -1,4 +1,5 @@
 <!--pages/5/lwj.wxml-->
+<<<<<<< HEAD
 <!-- 这是点击登录和签到 -->
 <view class="head">
 	<!-- 登录-->
@@ -86,3 +87,6 @@
 			 </view>
       
 </view>
+=======
+<text>pages/5/lwj.wxml</text>
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c

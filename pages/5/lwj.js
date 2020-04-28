@@ -1,9 +1,14 @@
 // pages/5/lwj.js
 Page({
+<<<<<<< HEAD
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   /**
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
         arr:[
              {"title":"代付款","img":"./imges/tu_10.jpg"},
              {"title":"代成团","img":"./imges/tu_12.jpg"},
@@ -102,6 +107,9 @@ Page({
             "oldprice":899
           },
         ]
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   },
 
   /**

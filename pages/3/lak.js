@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     isShow:true,
     isHide:false,
     arrIndex:0,
@@ -135,13 +136,20 @@ Page({
     this.setData({
       gitIndex:i
     })
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
       console.log(this.data.arr)
+=======
+
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
   },
 
   /**
