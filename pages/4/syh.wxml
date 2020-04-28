@@ -1,5 +1,4 @@
 <!--pages/4/syh.wxml-->
-<<<<<<< HEAD
 <view class="shop">
   <view class="top">
     <image src="./images/控制.png"></image>
@@ -18,6 +17,3 @@
     </view>
   </view>
 </view>
-=======
-<text>pages/4/syh.wxml</text>
->>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!-- 大盒子 -->
 <view class="box">
   <!-- 头部input框 -->
@@ -44,7 +43,3 @@
     </view>
   </view>
 </view>
-=======
-<!--pages/2/zbc.wxml-->
-<text>pages/2/zbc.wxml</text>
->>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c

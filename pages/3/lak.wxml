@@ -1,5 +1,4 @@
 <!--pages/3/lak.wxml-->
-<<<<<<< HEAD
 <view class="header" >  
 <!-- 标题 -->
   <view 
@@ -60,6 +59,3 @@
 </view>
 
 
-=======
-<text>pages/3/lak.wxml</text>
->>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
