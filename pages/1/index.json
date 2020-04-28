@@ -1,7 +1,4 @@
 {
-<<<<<<< HEAD
-  "usingComponents": {}
-=======
 
   "usingComponents": {},
   "navigationBarTextStyle":"white"
@@ -9,5 +6,4 @@
   
  
   
->>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
 }
