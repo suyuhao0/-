@@ -1,7 +1,12 @@
 <view>
-<view>
-  详情页面
+
+<image src="{{title.img}}" ></image>
+
+<text class="txt" >
+  {{title.name}}
+</text>
+
+<view class="text" >
+内容介绍
 </view>
-  
-  {{title}}
 </view>

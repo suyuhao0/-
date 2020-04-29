@@ -79,7 +79,7 @@ Page({
       {
         id:4,
         age:"No.4",
-        name:"耳勺界的黑科技，外国人也在吹这跟东方「小棒棒」，边用边...",
+        name:"耳勺界的黑科技，外国人也在吹这跟东方「小棒棒」，边用边看爽到飞起",
         label1:"年度好物",
         label2:"采耳棒",
         label3:"可视化",
@@ -114,10 +114,11 @@ Page({
   gitInfo(e){
     console.log(e)
     let i = e.currentTarget.dataset.index
-    let title = this.data.list[i].name
-    console.log(title)
+    let title = this.data.list[i]
+    let str=JSON.stringify(title)
+    console.log("str：",str)
     wx.navigateTo({
-      url: `/pages/list/list?title=${title}`,
+      url: '/pages/list/list?title=' + str,
     }),
     this.setData({
       gitIndex:i
@@ -127,10 +128,11 @@ Page({
   gitInfo2(e){
     console.log(e)
     let i = e.currentTarget.dataset.index
-    let title = this.data.list2[i].name
-    console.log(title)
+    let title = this.data.list2[i]
+    let str=JSON.stringify(title)
+    console.log("str：",str)
     wx.navigateTo({
-      url: `/pages/list/list?title=${title}`,
+      url: '/pages/list/list?title=' + str,
     }),
     this.setData({
       gitIndex:i
@@ -141,7 +143,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      console.log(this.data.arr)
+      // console.log(this.data.arr)
   },
 
   /**

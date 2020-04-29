@@ -5,20 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    title:''
+    title:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.title)
-    let t = options.title
+   
+    let item=JSON.parse(options.title);
+     console.log("传过来的页面",item)
     this.setData({
-      title:t
+      title:item
     })
     wx.setNavigationBarTitle({
-      title: '发现里的详情页',
+      title: this.data.title.name,
     })
   },
 
