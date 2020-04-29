@@ -40,10 +40,10 @@
   wx:key="{{ index }}" 
   wx:if="{{isHide}}" >
       <view class="left" >
-        <view>
-          <view class="age" > {{item.age}} </view>
+        <view class="age" >
+          <view  > {{item.age}} </view>
         </view>
-        <text> {{item.name}} </text>
+        <text class="txt" > {{item.name}} </text>
         <view class="label" >
           <view> {{item.label1}} </view> 
           <view> {{item.label2}} </view> 
