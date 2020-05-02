@@ -1,5 +1,9 @@
 <!--pages/5/lwj.wxml-->
 <!-- 这是点击登录和签到 -->
+<scroll-view 
+scroll-y="{{ true }}"
+ style="height:{{ height }}px"
+bindscrolltolower="down">
 <view class="head">
 	<!-- 登录-->
 	<view class="head_red">
@@ -65,20 +69,21 @@
        </view>  
 </view>
 <!-- 猜你喜欢 -->
+
 <view class="center_four">
 			 <view class="three_down">
 			        <view class="love">
 			      猜你喜欢
 		      	 </view>
 						 <view class="love_down">
-						  <view class="love_list"  wx:for="{{list}}" >
+						  <view class="love_list"  wx:for="{{list}}" data-id="{{ item.id }}" >
 						    <image src="{{item.img}}" class="love_pic" ></image>
 								<view class="love_name">{{item.name}}</view>
-								<view class="love_connect">{{item.connect}}</view>
+								<view class="love_connect">{{item.merit}}</view>
 								<view class="love_new">新品</view>
 								<view>
-								    <text class="love_price">￥{{item.price}}</text>
-										<text class="love_oldprice">￥{{item.oldprice}}</text>
+								    <text class="love_price">￥{{item.cur_price}}</text>
+										<text class="love_oldprice">￥{{item.ori_price}}</text>
 								</view>
 						 </view>
 						 </view>
@@ -86,3 +91,5 @@
 			 </view>
       
 </view>
+</scroll-view>
+
