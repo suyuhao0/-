@@ -1,1 +1,87 @@
-/* pages/2/zbc.wxss */
+/* 头部盒子 */
+.header{
+  width: 100%;height: 90rpx;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  display: flex;justify-content: center;
+  align-items: center;
+}
+.input{
+  width: 90%;height: 60rpx;
+  background-color: #EEEFF1;
+  display: flex;
+}
+.img{
+  width: 70rpx;height: 90rpx;
+  text-align: center;line-height: 80rpx
+}
+.img>image{
+  width: 50%;height: 50%
+}
+.inp{
+  flex: 1;
+}
+.inp>input{
+  width: 100%;height: 100%
+}
+
+
+/* 内容区 */
+.con{
+  width: 100%;height: 90vh;
+  display: flex;
+}
+.con_left{
+  width: 25%;height: 100%;
+  border-right: 1px solid gainsboro;
+}
+.ite{
+  width: 90%;height: 30px;
+  margin: 15rpx 0px;
+  line-height: 30px;
+  font-size: 14px;
+  text-indent: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+/* 点击选中左边显示红线 */
+.active{
+  width: 3px;height: 60%;
+  background-color: red;
+}
+
+.con_right{
+  width: 75%;height: 100%;
+  overflow: scroll
+}
+.con_right_top{
+  width: 100%;height: 260rpx;
+  background-color: red
+}
+.con_right_title{
+  width: 90%;height: 50px;
+  line-height: 50px; 
+  margin: 0 auto;
+  color: #757575
+}
+.con_right_bot{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.con_right_bot_list{
+  width: 30%;height: 200rpx;
+  margin: 9rpx
+}
+.item_img{
+  width: 100%;height: 150rpx;
+  background-color: pink
+}
+.item_text{
+  width: 100%;height: 50rpx;
+  font-size: 12px;color: #757575;
+  text-align: center;
+  line-height: 50rpx
+}

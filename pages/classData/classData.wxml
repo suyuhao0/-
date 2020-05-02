@@ -1,0 +1,10 @@
+git<view>
+  <view class="data_top">
+    <scroll-view scroll-x="{{true}}" style=" width: 100%;white-space: nowrap;" >
+      <view class="nav" wx:for="{{ nav }}" wx:key="index" >
+        <text>{{item.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="data_bot"></view>
+</view>

@@ -1,2 +1,19 @@
 <!--pages/4/syh.wxml-->
-<text>pages/4/syh.wxml</text>
+<view class="shop">
+  <view class="top">
+    <image src="./images/控制.png"></image>
+    <text>优惠卷</text>
+  </view>
+</view>
+<view class="box">
+  <view class="conter">
+    <view class="selected">
+        <checkbox></checkbox>
+        <image src="./images/image_03.gif"></image>
+        <view class="mincontent">
+          <text>智能尤克里里套装版 视觉科技</text>
+          
+        </view>
+    </view>
+  </view>
+</view>

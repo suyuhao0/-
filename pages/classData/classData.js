@@ -1,18 +1,22 @@
-// pages/4/syh.js
+// pages/classData/classData.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    nav:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // let title = JSON.parse(options);
+    console.log(options.nav)
+    this.setData({ 
+      nav: options.nav
+    });
   },
 
   /**
@@ -26,12 +30,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-        wx.request({
-          url: 'https://api.douban.com/v2/movie/top250?apikey=0b2bdeda43b5688921839c8ecb20399b',
-          success(res){
-            console.log(res)
-          }
-        })
 
   },
 

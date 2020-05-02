@@ -1,13 +1,98 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+
+<view class="page">
+<!-- input搜索框部分 -->
+<view class="head">
+  <view class="Search">
+      <input class="inp" type="text" placeholder="鞋"></input>
+      <view class="ico">
+         <image src="../1/img/kf.png" class="img"></image>
+      </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <scroll-view scroll-x="true" style="white-spac:nowrap" class="nav">
+       <view
+        wx:for="{{arr}}"
+         class="nav-item {{index ===current? 'active' :''}}"
+          catchtap="item"
+           data-index="{{index}}"
+          bindtap="switchNav"
+          >
+          {{item.title}}
+          </view>
+</scroll-view>
+</view>
+<!-- 轮播图 -->
+<view>
+   <swiper
+    indicator-dots="{{true}}"
+    indicator-color="#ccc"
+    indicator-active-color="#FF0000"
+    class="swi"
+    interval="1000"
+    circular="true"
+    >
+      <swiper-item wx:for="{{list}}">
+          <image src="{{item.img}}" class="img1"></image>
+      </swiper-item>
+   </swiper>
+</view>
+<view class="bo">
+    <view wx:for="{{bo}}" class="bo-bo">
+      <image src="{{item.img}}" class="img2"></image>
+      <text class="bo-item">{{item.title}}</text>
+    </view>
+</view>
+
+<view class="tab">
+  <view class="tab-item" wx:for="{{tab}}">
+   
+     <view class="tu">
+         <image src="{{item.img}}" class="img3"></image>
+     </view>
+   <text class="txt">{{item.title}}</text>
+  </view>  
+</view>
+<!-- 新人推荐 -->
+<view class="con">
+    <view>
+        <text class="con-txt">新人推荐</text>
+    </view>
+    <view class="con-nr">
+       <view class="con-nr1" wx:for="{{con}}" wx:key="{{index}}">
+           <text class="txt1">{{item.txt}}</text>
+           <text class="txt2">{{item.txt1}}</text>
+           <image src="{{item.img}}" class="img4"></image>
+           <view class="txt3">{{item.txt2}}</view>
+       </view>
+       <view class="con-nr2" wx:for="{{con1}}" wx:key="{{index}}">
+          <view class="con-nr21">
+            <view class="con-nr-tex">{{item.txt1}}</view>
+            <image class="img5" src="{{item.img}}"></image>
+          </view>
+          <view class="con-nr22">
+              <text class="com-nr22-txt1">{{item.jg}}</text>
+              <text class="com-nr22-txt2" style='color:#ccc;text-decoration:line-through;'>{{item.sjg}}</text>
+              <text class="com-nr22-txt3">{{item.txt2}}</text>
+          </view>
+       </view>
+    </view>
+</view>
+<view class="con2" wx:for="{{con2}}">
+    <text class="con2-txt1">{{item.txt1}}</text>
+   <view class="con2-nr">
+       <image class="img6" src="{{item.img}}"></image>
+   <view class="con2-nr2">
+       <text class="con2-txt2">{{item.txt2}}</text>
+       <view class="con2-txt3">{{item.txt3}}</view>
+       <view class="con3-txt4">
+           <text class="con3-txt41">{{item.txt4}}</text>
+            <text class="con3-txt42">{{item.txt5}}</text>
+           <text class="con3-txt43" style='color:#ccc;text-decoration:line-through;'>{{item.txt6}}</text>
+           <view class="con3-txt44">
+              <text>{{item.txt7}}</text>
+           </view>
+       </view>
+       <view class="con3-txt5">{{item.txt8}}</view>
+   </view>
+   </view>
+</view>
 </view>

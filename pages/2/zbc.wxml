@@ -1,2 +1,45 @@
-<!--pages/2/zbc.wxml-->
-<text>pages/2/zbc.wxml</text>
+<!-- 大盒子 -->
+<view class="box">
+  <!-- 头部input框 -->
+  <view class="header">
+    <view class="input">
+      <view class="img">
+        <image src="/image/sousuo.png" ></image>
+      </view>
+      <view class="inp">
+        <input type="text" ></input>
+      </view>
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class="con">
+    <!-- 左边列表 -->
+    <view class="con_left">
+      <view class="ite " 
+            wx:for="{{ list }}" 
+            catchtap="onItem" 
+            data-index="{{ index }}" 
+            wx:key="index"
+      >
+      <view class="{{ seteIndex === index?'active':'' }}" ></view>
+      <view>{{item.catename}}</view> 
+    </view>
+    </view>
+    <!-- 右边渲染列表 -->
+    <view class="con_right">
+      <view class="con_right_top">图片</view>
+        <view class="con_right_title">{{title}}</view>
+      <view class="con_right_bot" >
+        <view class="con_right_bot_list"
+            wx:for="{{ items }}"
+            wx:key="index"
+            catchtap="onList"
+            data-item="{{ items }}"
+        >
+          <view class="item_img"></view>
+          <view class="item_text">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

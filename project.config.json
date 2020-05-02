@@ -4,12 +4,23 @@
 		"ignore": []
 	},
 	"setting": {
+<<<<<<< HEAD
 		"urlCheck": false,
+=======
+<<<<<<< HEAD
+		"urlCheck": false,
+=======
+		"urlCheck": true,
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
+>>>>>>> db0a41f7a9f36034faea978abf050fcfb073bccc
 		"es6": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 		"coverView": true,
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
@@ -22,6 +33,26 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		}
+=======
+		"autoAudits": false,
+>>>>>>> db0a41f7a9f36034faea978abf050fcfb073bccc
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+<<<<<<< HEAD
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+=======
+		"scopeDataCheck": false
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
+>>>>>>> db0a41f7a9f36034faea978abf050fcfb073bccc
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
