@@ -1,24 +1,63 @@
 .data_top{
-  width: 100%;
-  height: 44rpx;
-  /* display: flex; overflow-x: initial; */
-  /* display: -webkit-box; */
+  width: 100%;height: 50rpx;
+  position: fixed;top: 0;
+  background-color: white
 }
-/* .nav_box{
-  width: 200%;height: 100%;
-  background-color: purple;
-  overflow: hidden;
-        animation: moving 10s linear infinite;
-} */
-.nav{
-  width: 100rpx;height: 50rpx;
-  background-color: red;
-  margin-right: 10px;
-  display: inline-block
+.scroll{
+  white-space: nowrap;width: 100%
 }
-
-
+.scroll_view{
+  width: 200rpx;height: 50rpx;
+  display: inline-block;
+  font-size: 14px;
+}
+.scroll_view_txt{
+  width: 80%;
+  text-align: center;
+  color: #F73451;
+  border-bottom: 3px solid #F73451;
+}
+.scroll_view_t{
+  width: 80%;
+  text-align: center;
+}
 .data_bot{
-  width: 100%;height: 100vh;
-  background-color: #F0F0F0
+  width: 100%;
+  background-color: #F0F0F0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50rpx
+}
+.data_bot_box{
+  width: 50%;height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.data_bot_box_con{
+  width: 95%;height: 95%;
+  background-color: white;
+  border-radius: 10px;
+}
+.data_bot_box_con_img{
+  width: 100%;height: 60%;
+}
+.data_bot_box_con_img image{
+  width: 100%;height: 100%;
+}
+.data_bot_box_con_txt{
+  width: 100%;height: 20%;
+}
+.data_bot_box_con_txt2{
+  width: 100%;height: 10%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.data_bot_box_con_price{
+  width: 100%;height: 10%;
 }

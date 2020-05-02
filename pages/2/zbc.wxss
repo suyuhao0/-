@@ -57,7 +57,9 @@
 }
 .con_right_top{
   width: 100%;height: 260rpx;
-  background-color: red
+}
+.con_right_top image{
+  width: 100%;height: 100%;
 }
 .con_right_title{
   width: 90%;height: 50px;
@@ -77,7 +79,9 @@
 }
 .item_img{
   width: 100%;height: 150rpx;
-  background-color: pink
+}
+.item_img image{
+  width: 100%;height: 100%
 }
 .item_text{
   width: 100%;height: 50rpx;
