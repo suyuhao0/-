@@ -1,10 +1,38 @@
 git<view>
   <view class="data_top">
-    <scroll-view scroll-x="{{true}}" style=" width: 100%;white-space: nowrap;" >
-      <view class="nav" wx:for="{{ nav }}" wx:key="index" >
-        <text>{{item.name}}</text>
-      </view>
+    <scroll-view class="scroll" scroll-x="{{ true }}">
+        <view class="scroll_view"
+            wx:for="{{ user }}" 
+            wx:key="index" 
+            bindtap="onScroll"
+            data-index="{{ index }}"
+            >
+          <view 
+            class="scroll_view_t {{seleIndex === index?'scroll_view_txt':''}}"
+          >
+            {{ item.name }}
+          </view>
+        </view>
     </scroll-view>
   </view>
-  <view class="data_bot"></view>
+  <view class="data_bot">
+    <view class="data_bot_box" 
+          wx:for="{{ xItem }}"
+          wx:key="index" >
+      <view class="data_bot_box_con">
+        <view class="data_bot_box_con_img">
+          <image src="{{ item.image }}" ></image>
+        </view>
+        <view class="data_bot_box_con_txt">
+          {{ item.txt }}
+        </view>
+        <view class="data_bot_box_con_txt2">
+          {{ item.txt2 }}
+        </view>
+        <view class="data_bot_box_con_price">
+          {{ item.price }}
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

@@ -5,18 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-    nav:[]
+    user:[],
+    seleIndex:0,
+    xItem:[]
+  },
+
+  onScroll(e){
+    let { index } = e.currentTarget.dataset
+    console.log(index)
+    this.setData({
+      seleIndex:index,
+      xItem: this.data.user[index].arr
+    })
+    console.log(this.data.user[this.data.seleIndex])
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // let title = JSON.parse(options);
-    console.log(options.nav)
+    var list = JSON.parse(options.nav)
     this.setData({ 
-      nav: options.nav
+      user: list,
+      xItem: list[this.data.seleIndex].arr
     });
+    console.log(list[this.data.seleIndex].arr)
+
   },
 
   /**
