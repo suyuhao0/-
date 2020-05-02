@@ -4,16 +4,35 @@
 		"ignore": []
 	},
 	"setting": {
+<<<<<<< HEAD
+		"urlCheck": false,
+=======
 		"urlCheck": true,
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
 		"es6": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
+<<<<<<< HEAD
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+=======
 		"autoAudits": false,
 		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false
+>>>>>>> fb7011a914dcbb5848e830418eb99ed3de13f06c
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",

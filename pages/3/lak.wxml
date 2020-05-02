@@ -1,2 +1,61 @@
 <!--pages/3/lak.wxml-->
-<text>pages/3/lak.wxml</text>
+<view class="header" >  
+<!-- 标题 -->
+  <view 
+    wx:for = "{{ arr }}" 
+    wx:key="{{ index }}" 
+    data-index="{{index}}"
+    class="{{ index===arrIndex ? 'ber' : '' }}"
+    bindtap="click"
+  > {{ item.title }} </view>
+</view>
+<view class="main" >
+<view>
+<!-- 每日精选的数据 -->
+  <view 
+  data-index="{{index}}"
+  catchtap="gitInfo"
+  class="box" 
+  wx:for="{{ list }}" 
+  wx:key="{{ index }}" 
+  wx:if="{{isShow}}" >
+    <view class="left" >
+      <text> {{item.name}} </text>
+      <view class="label" >
+        <view> {{item.label1}} </view> 
+        <view> {{item.label2}} </view> 
+        <view wx:if="{{item.label3.length>0}}" >{{item.label3}}</view> 
+      </view>
+    </view>
+    <view class="right" >
+      <image src="{{ item.img }}" ></image>
+    </view>
+  </view>
+  <!-- 近期热文的数据 -->
+  <view
+  data-index="{{index}}"
+  catchtap="gitInfo2"
+  class="box" 
+  wx:for="{{ list2 }}" 
+  wx:key="{{ index }}" 
+  wx:if="{{isHide}}" >
+      <view class="left" >
+        <view class="age" >
+          <view  > {{item.age}} </view>
+        </view>
+        <text class="txt" > {{item.name}} </text>
+        <view class="label" >
+          <view> {{item.label1}} </view> 
+          <view> {{item.label2}} </view> 
+          <view wx:if="{{item.label3.length>0}}" >{{item.label3}}</view> 
+        </view>
+      </view>
+      <view class="right" >
+        <image src="{{ item.img }}" ></image>
+      </view>
+    </view>
+</view>
+
+</view>
+
+

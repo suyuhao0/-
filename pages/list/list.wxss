@@ -1,0 +1,9 @@
+/* pages/list/list.wxss */
+.txt{
+  text-align: center;
+  font-size: 20px;
+ 
+}
+.text{
+   margin-top: 20px;
+}

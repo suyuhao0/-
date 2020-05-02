@@ -1,4 +1,4 @@
-<view>
+git<view>
   <view class="data_top">
     <scroll-view class="scroll" scroll-x="{{ true }}">
         <view class="scroll_view"

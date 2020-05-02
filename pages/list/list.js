@@ -1,18 +1,26 @@
-// pages/4/syh.js
+// pages/list/list.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    title:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+   
+    let item=JSON.parse(options.title);
+     console.log("传过来的页面",item)
+    this.setData({
+      title:item
+    })
+    wx.setNavigationBarTitle({
+      title: this.data.title.name,
+    })
   },
 
   /**
@@ -26,12 +34,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-        wx.request({
-          url: 'https://api.douban.com/v2/movie/top250?apikey=0b2bdeda43b5688921839c8ecb20399b',
-          success(res){
-            console.log(res)
-          }
-        })
 
   },
 
